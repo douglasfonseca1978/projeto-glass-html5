@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+            <title>Tudo sobre o Google Glass</title>
+            <link rel="stylesheet" type="text/css" media="screen"  href="css/estilo_2025.css">  
+            <link rel="stylesheet" type="text/css" media="screen"  href="css/fotos_2025.css">
+        </head>
+        <script>
+                function MudaFoto(Foto)
+                {
+                    document.getElementById("icone").src = Foto;
+                }
+            </script>
+        <body>
+            <main class="interface">
+                <header class="cabecalho">
+                    
+                        <h1>Google Glass</h1>
+                        <h2>A revolução do Google está chegando</h2>
+
+                    <img id="icone" src="imagens/fotos.png"/>  
+                    <Nav class="menu">              
+                           
+                        <h2>Menu Principal</h2>
+                        <ul>
+                            <li onmouseover="MudaFoto ('imagens/home.png')" onmouseout="MudaFoto ('imagens/fotos.png')">
+                                <a href="index.html">Home</a></li>
+
+                            <li onmouseover="MudaFoto ('imagens/especificacoes.png')" onmouseout="MudaFoto ('imagens/fotos.png')">
+                                <a href="especificacoes_2025.html">Especificações</a></li>
+
+
+                            <li onmouseover="MudaFoto ('imagens/fotos.png')" onmouseout="MudaFoto ('imagens/fotos.png')">
+                                <a href="fotos_2025.html">Fotos</a></li>
+
+
+                            <li onmouseover="MudaFoto ('imagens/multimidia.png')" onmouseout="MudaFoto ('imagens/fotos.png')">
+                                <a href="multimidia_2025.html">Multimidia</a></li>
+
+                            <li onmouseover="MudaFoto ('imagens/contato.png')" onmouseout="MudaFoto ('imagens/fotos.png')">
+                                <a href="contato_2025.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                    <section class="corpo-full">
+                        <article class="noticia-principal">
+                            <header class="cabecalho-artigo">
+                                 <hgroup>
+                                     <h3>Glass > Fotos</h3>
+                                    <h1>Galeria de Imagens do Google Glass</h1>
+                                    <h2>por Gustavo Guanabara/atualizado por /Douglas Fonseca</h2>
+                                    <h3 class="direita">Atualizado em 12/2025</h3>
+                                </hgroup>
+                            </header>                                               
+
+
+                            <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+                            <ul id="album-fotos">
+                                <li id="foto01"><span>Agenda e Lembretes</span></li>
+                                <li id="foto02"><span>Sergey Brin Usando o Glass</span></li>
+                                <li id="foto03"><span>Leve e compacto</span></li>
+                                <li id="foto04" ><span>Sensação de uma Tela de 50"</span></li>
+                                <li id="foto05"><span>Varios</span></li>
+                                <li id="foto06"><span>Informações importantes</span></li>
+                            </ul>
+                        </article>
+                    </section>
+                <footer class="rodape">     
+                        <p>Copyright 2013 - by Gustavo Guanabara- Revisão 2025 douglas fonseca</p>
+                        <p>Facebook | Twitter</p>
+                </footer> 
+            </main>
+        </body>        
+    </html>

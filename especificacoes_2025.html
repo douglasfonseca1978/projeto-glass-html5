@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+            <title>Tudo sobre o Google Glass</title>
+            <link rel="stylesheet" type="text/css" media="screen"  href="css/estilo_2025.css">  
+            <link rel="stylesheet" type="text/css" media="screen"  href="css/specs.css">
+        </head>
+        <script>
+                function MudaFoto(Foto)
+                {
+                    document.getElementById("icone").src = Foto;
+                }
+            </script>
+        <body>
+            <main class="interface">
+                <header class="cabecalho">
+                    
+                        <h1>Google Glass</h1>
+                        <h2>A revolução do Google está chegando</h2>
+
+                    <img id="icone" src="imagens/especificacoes.png"/>  
+                    <Nav class="menu">              
+                           
+                        <h2>Menu Principal</h2>
+                        <ul>
+                            <li onmouseover="MudaFoto ('imagens/home.png')" onmouseout="MudaFoto ('_imagens/especificacoes.png')"> <a href="index.html">Home</a></li>
+
+                            <li onmouseover="MudaFoto ('imagens/especificacoes.png')" onmouseout="MudaFoto ('imagens/especificacoes.png')">
+                            <a href="especificacoes_2025.html">Especificações</a></li>
+
+
+                            <li onmouseover="MudaFoto ('imagens/fotos.png')" onmouseout="MudaFoto ('_imagens/especificacoes.png')">
+                            <a href="fotos_2025.html">Fotos</a></li>
+
+
+                            <li onmouseover="MudaFoto ('imagens/multimidia.png')"
+                             onmouseout="MudaFoto ('imagens/especificacoes.png')">
+                            <a href="multimidia_2025.html">Multimidia</a></li>
+
+                            <li onmouseover="MudaFoto ('imagens/contato.png')"
+                            onmouseout="MudaFoto ('imagens/especificacoes.png')">
+                            <a href="contato_2025.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <section class="corpo-full">
+                    <article class="noticia-principal">
+                        <header class="cabecalho-artigo">
+                            <hgroup>
+                                <h3>Glass > Especificações</h3>
+                                <h1>Raio X no Google Glass</h1>
+                                <h2>por Gustavo Guanabara / Atualizado por Douglas Fonseca</h2>
+                                <h3 class="direita">Atualizado em 12/2025</h3>
+                            </hgroup>
+                        </header>
+                    </article>                        
+                        <section class="conteudo">
+                            <img src="imagens/glass-esquema-marcado.jpg" usemap="#MeuMapa"/>
+                            <map name="MeuMapa">
+					<area shape="rect" coords="179,202,270,260" href=" google-glass.html#tela" target="janela" />
+					<area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela" />
+					<area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela" />
+					<area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela" />
+				</map>
+                            <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+                        </section>
+                </section>
+                <footer class="rodape">     
+                        <p>Copyright 2013 - by Gustavo Guanabara- Revisão 2025 douglas fonseca</p>
+                        <p>Facebook | Twitter</p>
+                </footer> 
+            </main>
+        </body>        
+    </html>

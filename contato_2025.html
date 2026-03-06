@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+            <title>Contato</title>
+            <link rel="stylesheet" type="text/css" media="screen"  href="css/estilo_2025.css">  
+            <link rel="stylesheet" type="text/css" media="screen"  href="css/media_2025.css">
+            <style>
+                Legend{
+                    color: blue;
+                    size: 20pt;
+                }
+                fieldset{
+                    background-color: #ddd;
+                    margin: auto 20px auto 0px;
+                }
+
+            </style>
+        </head>
+        <script>
+                function MudaFoto(Foto)
+                {
+                    document.getElementById("icone").src = Foto;
+                }
+            </script>
+        <body>
+            <main class="interface">
+                <header class="cabecalho">
+                    
+                        <h1>Google Glass</h1>
+                        <h2>A revolução do Google está chegando</h2>
+
+                    <img id="icone" src="imagens/contato.png"/>  
+                    <Nav class="menu">              
+                           
+                        <h2>Menu Principal</h2>
+                        <ul>
+                            <li onmouseover="MudaFoto ('imagens/home.png')" onmouseout="MudaFoto ('imagens/contato.png')"> <a href="index.html">Home</a></li>
+
+                            <li onmouseover="MudaFoto ('imagens/especificacoes.png')" onmouseout="MudaFoto ('imagens/contato.png')">
+                            <a href="especificacoes_2025.html">Especificações</a></li>
+
+
+                            <li onmouseover="MudaFoto ('imagens/fotos.png')" onmouseout="MudaFoto ('imagens/contato.png')">
+                            <a href="fotos_2025.html">Fotos</a></li>
+
+
+                            <li onmouseover="MudaFoto ('imagens/Multimidia.png')"
+                             onmouseout="MudaFoto ('imagens/contato.png')">
+                            <a href="multimidia_2025.html">Multimidia</a></li>
+
+                            <li onmouseover="MudaFoto ('imagens/contato.png')"
+                            onmouseout="MudaFoto ('imagens/contato.png')">
+                            <a href="contato_2025.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                    <section class="corpo-full">
+                        <article class="noticia-principal">
+                            <header class="cabecalho-artigo">
+                                 <hgroup>
+                                     <h3>Fale Conosco > Contato</h3>
+                                    <h1>Formulário de Contato</h1>
+                                    <h2>por Gustavo Guanabara/atualizado por Douglas Fonseca</h2>
+                                    <h3 class="direita">Atualizado em 12/2025</h3>
+                                </hgroup>
+                            </header>
+                            <form method="post" id="fContato" action="mailto:douglasfonseca1978@gmail.com.br">
+                                <fieldset id="usuario">
+                                    <legend>Identificação do Usuário</legend>
+                                        <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size=20 maxlength="30" placeholder="Nome Completo"/></p>
+                                        <p><label for="cSenha">Senha: </label><input type="password" name="tSenha" id="cSenha"/ size="8" maxlength="8" placeholder="8 digitos"></p>
+                                        <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite seu E-mail"/></p>
+                                        <Fieldset>
+                                            <Legend>Sexo </Legend>
+                                        <input type="radio" name="tSexo" id="cMas" checked> <label for="cMas">Masculino</label><br>
+                                        <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                                        </Fieldset>
+                                        <p><label for="cNome">Data de nascimento: </label><input type="date" name="tData" id="cData" size=20 maxlength="30"/></p>                                        
+                                </fieldset>
+
+                                <fieldset id="endereco">
+                                    <legend>Endereço do Usuário</legend>
+                                            <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="40" maxlength="40" placeholder="Rua, avenida, travessa, beco, praça."/></p>
+                                            <p><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+                                            <p><label for="cCid">Cidade: </label><input type="text" name="tCid" id="cCid" size="40" maxlength="40" placeholder="Municipio de Nascinento."/></p>
+                                            <p><label for="cEst">UF: </label>
+                                                <select name="tEst" id="cEst">
+                                                    <optgroup label="Regiao Sudeste">
+                                                        <option value="RJ">Rio de Janeiro</option>
+                                                        <option value="SP" selected>São Paulo</option>
+                                                        <option value="MG">Minas Gerais</option>
+                                                    </optgroup>
+                                                    <optgroup label="Regiao Sudeste">
+                                                        <option value="RS">Rio Grande do Sul</option>
+                                                        <option value="SC">Santa Catarina</option>
+                                                        <option value="PR">Paraná</option>
+                                                    </optgroup>
+
+
+
+                                                </select></p>
+                                            
+                                </fieldset>
+                                
+                                <fieldset id="mensagem">
+                                            <Legend>Mensagem do Usuário</Legend>
+                                            <p><label for="cUrg">Grau de Urgência: </label>Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5">Máx.</p> 
+                                            <p><label for="cMsg">Mensagem: </label><textarea type="text" name="tMsg" id="cMsg" cols="50" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                                </fieldset>
+
+                                <fieldset id="pedido">
+                                            <legend>Quero um Google Glass</legend>
+                                            <p><label for="cPed">Gostaria de adquirir um Google Glass, quando disponivel: </label><input type="text" name="tPed" id="cPed" size="2" maxlength="2"></p>
+                                            <p><label for="cCor">Cor: </label><input type="text" name="tCor" id="cCor" size="10" maxlength=10"></p>
+                                            <p><label for="cQtd">Quantidade: </label><input type="number" name="tQtd" id="cQtd" min="1" max="200"></p>
+                                            <p><label for="cVal">Preço Total: R$ </label><input type="text" name="tVal" id="cVal" size="2" maxlength="2"></p>
+                                </fieldset>
+
+
+                                        [BOTÃO ENVIAR]
+                                </form>
+                        </article>
+                    </section>
+                <footer class="rodape">     
+                        <p>Copyright 2013 - by Gustavo Guanabara- Revisão 2025 douglas fonseca</p>
+                        <p>Facebook | Twitter</p>
+                </footer> 
+            </main>
+        </body>        
+    </html>

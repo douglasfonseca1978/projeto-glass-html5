@@ -1,0 +1,22 @@
+#tv-radio{
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background-image: url(../imagens/radio-tv.png);    
+}
+
+#musica{
+display: block;
+position: relative;
+left: 575px;
+top: 245px;
+width: 300px
+}
+
+#filme{
+    display: block;
+    position: relative;
+    left: 90px;
+    top: 120px;
+    width: 440px;    
+}

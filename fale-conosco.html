@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tudo Sobre Google Glass</title>
+        <link rel="stylesheet" href="css/estilo1.css"/>
+        <link rel="stylesheet" href="css/form.css"/>
+    </head> 
+    <script language="javascript" src="javascript/funcoes.js"></script>
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('cQtd').value);
+                tot = qtd*1500;
+                document.getElementById('cTot').value=tot;
+        }
+    </script>
+    <body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="imagens\contato.png"/>
+            <nav id="menu"> 
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="index.html">Home</a></li> 
+                    <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+
+            </nav>
+        </header> 
+
+        <form method="post" id="fContato" action="mailto:contato@curso.com.br" oninput="calc_total();">
+            <fieldset id="usuario">
+                <legend>Identificação do Usuário</legend>
+                <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" /></p>
+
+                <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8"maxlength="8" placeholder="8 Digitos" /></p>
+
+               <p> <label for="cMail">Email:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40"placeholder="Email"/></p>
+
+                    <fieldset id="sexo"><legend>Sexo:</legend>
+                        <input type="radio" name="tSexo" id   ="cMasc" /><label for="cMasc">Masculino</label><br/>
+                        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+                    </fieldset>
+
+                <p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc" size="20" maxlength="40"/></p>
+            </fieldset>
+
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="30" maxlength="40"placeholder="Av,rua,travessa,viela,praça"/></p>
+                <p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" size="8" maxlength="8"/ placeholder="Número"></p>
+
+                <p><label for="cEst">Estado:</label><select name="tEst" id="cEst">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AM</option>
+                    <option>AP</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MG</option>
+                    <option>MS</option>
+                    <option>MT</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>PR</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>RS</option>
+                    <option>SC</option>
+                    <option>SE</option>
+                    <option selected>SP</option>
+                    <option>TO</option>
+                    
+                </select></p>
+                <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" size="40" maxlength="40" placeholder="Cidade"/></p>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend>Mensagem do usuário</legend>
+                <p><label for="cMen">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+                </legend>
+                <p><label for="cUrg">Grau de urgencia:  </label>Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+              
+            </fieldset>
+
+            <fieldset id="pedido">
+                <legend>Quero um Google Glass</legend>
+
+                <p>
+                    <input type="checkbox" name="tPed" id="cPed"/>   
+                    <label for="cPed">Gostaria de adquirir um Google Glass</p>
+
+                <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#ff0000"> </p>
+
+                <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/></p>
+
+                <p><label for="cTot">Preço Total: R$:</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly /></p>
+                
+            </fieldset>
+
+
+            <input type="image" name="tEnviar" src="imagens/botao-enviar.png"/>
+
+        </form>
+            <footer id="rodape">    
+                <p>Copyright &copy; 2013 - by Gustavo Guanabara <br/>
+                <a href="http://facebook.com/pbdouglasfonseca" target="blank">Facebook</a> 
+                <a href="http://twitter.com/dcdouglasfonseca" target="blank">Twitter</a></p>
+                <p>atualizado por Douglas Fonseca 05/2022 e 03/2023</p>
+
+             </footer> 
+        </div>
+
+    </body>
+</html>
